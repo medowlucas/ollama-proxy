@@ -11,8 +11,8 @@ app.use(express.json());
 
 app.post("/api/chat", async (req, res) => {
   try {
-    const container = 'ollama-api-mk4wsw40og8k0wokkko4s44o'
-    const response = await fetch(`https://${container}/ollama/api/chat`, {
+    const container = 'ollama-api-mk4wsw40og8k0wokkko4s44o:11434'
+    const response = await fetch(`http://${container}/api/chat`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

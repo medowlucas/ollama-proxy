@@ -9,6 +9,10 @@ app.use(cors());
 
 app.use(express.json());
 
+app.get("/teste", (req, res) => {
+  res.send('Hello')
+})
+
 app.post("/api/chat", async (req, res) => {
   try {
     const container = 'ollama-api-mk4wsw40og8k0wokkko4s44o:11434'
